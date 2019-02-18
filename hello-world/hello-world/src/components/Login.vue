@@ -1,10 +1,10 @@
 <template>
   <div>
     <div>
-      <input class="login-input" type="text" v-model="userName">
+      <input class="login-name" type="text" v-model="userName">
     </div>
     <div>
-      <input class="login-input" type="text" v-model="psd">
+      <input class="login-psd" type="text" v-model="psd">
     </div>
     <div>
       <input type="button" value="登陆" @click="login">
@@ -33,3 +33,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.login-name {
+  border: 1px solid rgb(180, 23, 23);
+}
+</style>
