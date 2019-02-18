@@ -15,11 +15,19 @@
 <script>
 export default {
   name: 'Login',
+  data () {
+    return {
+      userName: '',
+      psd: ''
+    }
+  },
   methods: {
     login () {
       if (this.userName !== '' && this.psd !== '') {
         this.$router.push('/')
         alert('I am fine')
+      } else {
+        alert('TMD, You must give me sth')
       }
     }
   }
