@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>环绕轨道</title>
+  <style>
+  body {
+    background-color: white
+  }
+  #sun {
+    width: 800px;
+    height: 800px;
+    background-color: black;
+    position: relative;
+  }
+  .ball {
+    border: 1px dashed #bbbbbb;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+  #r1 {
+    width: 700px;
+    height: 700px; 
+  }
+  #r2 {
+    width: 600px;
+    height: 600px; 
+  }
+  #r3 {
+    width: 500px;
+    height: 500px; 
+  }
+  #r4 {
+    width: 400px;
+    height: 400px; 
+  }
+  #r5 {
+    width: 300px;
+    height: 300px; 
+  }
+  #r6 {
+    width: 200px;
+    height: 200px; 
+  }
+  #r7 {
+    width: 100px;
+    height: 100px; 
+  }
+  #r8 {
+    width: 50px;
+    height: 50px; 
+    background: orange;
+  }
+
+  .earth {
+    overflow: visible;
+    border-radius: 50%;
+    top: -50%;
+    transform: translateY(-50%);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #r11 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: -25px;
+    background: red;
+    animation: ray 0.5s linear 2s infinite;
+    transform-origin: 350px 350px;
+  }
+  #r12 {
+    width: 40px;
+    height: 40px;
+    background: blueviolet;
+  }
+  #r13 {
+    width: 30px;
+    height: 30px;
+    background: pink;
+  }
+  #r14 {
+    width: 25px;
+    height: 25px;
+    background: red;
+  }
+  #r15 {
+    width: 20px;
+    height: 20px;
+    background: yellow;
+  }
+  #r16 {
+    width: 15px;
+    height: 15px;
+    background: red;
+  }
+  #r17 {
+    width: 10px;
+    height: 10px;
+    background: green;
+  }
+
+  @keyframes ray {
+    to { transform: rotate(1turn); }
+  }
+  </style>
+</head>
+<body>
+  <div id="sun">
+    <div id="r1" class="ball">
+      <div id="r11" class="earth"></div>
+    </div>
+    <div id="r2" class="ball">
+        <div id="r12" class="earth"></div>
+    </div>
+    <div id="r3" class="ball">
+        <div id="r13" class="earth"></div>
+    </div>
+    <div id="r4" class="ball">
+        <div id="r14" class="earth"></div>
+    </div>
+    <div id="r5" class="ball">
+        <div id="r15" class="earth"></div>
+    </div>
+    <div id="r6" class="ball">
+        <div id="r16" class="earth"></div>
+    </div>
+    <div id="r7" class="ball">
+        <div id="r17" class="earth"></div>
+    </div>
+    <div id="r8" class="ball"></div>
+  </div> 
+</body>
+</html>
